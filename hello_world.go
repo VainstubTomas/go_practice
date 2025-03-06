@@ -31,7 +31,7 @@ func main() {
 	const mi_nombre string = "Tomás"
 	fmt.Println(mi_nombre)
 
-	//condicional
+	// //condicional
 
 	var numero_de_prueba int = 22
 
@@ -41,7 +41,7 @@ func main() {
 		fmt.Print(false)
 	}
 
-	//array
+	// //array
 
 	var array [4]int
 	array[0] = 1
@@ -53,7 +53,7 @@ func main() {
 	var array2 [4]string
 	fmt.Println(array2)
 
-	//map con estructura clave valor
+	// //map con estructura clave valor
 
 	myMap := make(map[string]string)
 	myMap["nombre"] = "Tomás"
@@ -61,7 +61,7 @@ func main() {
 	myMap["edad"] = "21"
 	fmt.Println(myMap)
 
-	//lista
+	// //lista
 
 	myList := list.New()
 	myList.PushBack("front")
@@ -70,7 +70,7 @@ func main() {
 	fmt.Println(myList.Front().Value)
 	fmt.Println(myList.Back().Value)
 
-	//bucle
+	// //bucle
 
 	for index := 0; index < len(array); index++ {
 		fmt.Println(array[index])
@@ -80,10 +80,10 @@ func main() {
 		fmt.Println(key, value)
 	}
 
-	//llamada a la funcion de ejemplo
+	// //llamada a la funcion de ejemplo
 	fmt.Println(ejemplo_funcion())
 
-	//estructuras - struct (vendrian siendo las clases)
+	// //estructuras - struct (vendrian siendo las clases)
 
 	type Persona struct {
 		name        string
