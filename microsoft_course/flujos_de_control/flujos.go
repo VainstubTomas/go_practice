@@ -54,6 +54,28 @@ func main() {
 		fmt.Println((j))
 	}
 
+	//defer
+	for k := 1; k < 4; k++ {
+		defer fmt.Println("diferido", -k)
+		fmt.Println("normal", k)
+	}
+
+	highlow(2, 0)
+	fmt.Println("Program finished successfully!")
+
+}
+
+//funcion para usar el metodo panic
+
+func highlow(high int, low int) {
+	if high < low {
+		fmt.Println("Panic!")
+		panic("highlow() low greater than high")
+	}
+	defer fmt.Println("Deferred: highlow(", high, ",", low, ")")
+	fmt.Println("Call: highlow(", high, ",", low, ")")
+
+	highlow(high, low+1)
 }
 
 func location(city string) (string, string) {
